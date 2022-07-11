@@ -1,2 +1,6 @@
-# Noffication-badge_line
-Noffication badge like iOS-Line
+# mini-Apps  
+
+
+- ##Noffication-badge_line
+  Noffication badge like iOS-Line
+  
