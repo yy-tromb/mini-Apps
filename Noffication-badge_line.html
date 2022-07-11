@@ -74,7 +74,7 @@ const nof=document.getElementById("nof");
 document.onload=()=>{
    const picture=document.getElementsByTagName("picture")[0];
    const place=piacture.getBoundingClientRect();
-   
+   nof.style.top=(place.top+window.scrollY)-100+"px";
 };
 
 
