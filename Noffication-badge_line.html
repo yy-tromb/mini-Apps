@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Noffication-badge_line</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+
+html,body{
+   width:100%;
+   height:100%;
+   text-align: center;
+   font-size: 1.2em;
+
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select:none;
+   user-select: none;
+
+   -webkit-user-drag: none;
+
+}
+
+body{
+   padding-top: auto;
+   padding-bottom: auto;
+   display: flex;
+}
+
+picture{
+   width:90vw;
+   max-width: 90vh;
+   height: 90vw;
+   max-height: 90vh;
+   margin:auto;
+
+   align-items: center;
+   justify-content: center;
+
+}
+
+picture img{
+   margin:auto;
+   padding:auto;
+   width:100%;
+   height:100%;
+   text-align: center;
+
+   border-radius: 22.5%;
+}
+
+#nof{
+   color:white;
+   background-color: red;
+
+   position:absolute;
+}
+
+    </style>
+  </head>
+  <body>
+   <picture>
+      <source type="image/webp" srcset="./Noffication-badge_line/LINEicon.webp">
+      <img src="./Noffication-badge_line/LINEicon.png" type="image/png" alt="Line icon">
+   </picture>
+
+   <div id="nof">0</div>
+
+    <script>
+
+let count=0;
+const nof=document.getElementById("nof");
+
+document.body.onclick=()=>countup();
+document.body.onkeydown=e=>{
+   if(e.key="ArrowRight"){
+      countup();
+   }else{
+      return false;
+   }
+};
+
+function countup(){
+   
+   nof.textContent=++count;
+}
+
+    </script>
+  </body>
+</html>
 
