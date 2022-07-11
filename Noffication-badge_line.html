@@ -71,11 +71,11 @@ picture img{
 let count=0;
 const nof=document.getElementById("nof");
 
-document.onload=()=>{
+document.addEventListener("DOMContentLoaded",()=>{
    const picture=document.getElementsByTagName("picture")[0];
-   const place=piacture.getBoundingClientRect();
+   const place=picture.getBoundingClientRect();
    nof.style.top=(place.top+window.scrollY)-100+"px";
-};
+});
 
 
 document.body.onclick=()=>countup();
