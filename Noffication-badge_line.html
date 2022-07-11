@@ -37,6 +37,7 @@ picture{
    align-items: center;
    justify-content: center;
 
+   position:relative;
 }
 
 picture img{
@@ -64,12 +65,18 @@ picture img{
       <img src="./Noffication-badge_line/LINEicon.png" type="image/png" alt="Line icon">
    </picture>
 
-   <div id="nof">0</div>
+   <div id="nof"></div>
 
     <script>
-
 let count=0;
 const nof=document.getElementById("nof");
+
+document.onload=()=>{
+   const picture=document.getElementsByTagName("picture")[0];
+   const place=piacture.getBoundingClientRect();
+   
+};
+
 
 document.body.onclick=()=>countup();
 document.body.onkeydown=e=>{
