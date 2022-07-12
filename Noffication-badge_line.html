@@ -58,6 +58,9 @@ picture img{
 }
 
     </style>
+    
+    <script>window.onerror=e=>alert(e);</script>
+
   </head>
   <body>
    <picture>
@@ -71,14 +74,24 @@ picture img{
 let count=0;
 const nof=document.getElementById("nof");
 const picture=document.getElementsByTagName("picture")[0];
-const place=picture.getBoundingClientRect();
+let place=picture.getBoundingClientRect();
+let iw=window.innerWidth;
+let ih=window.innerHeight;
+let bs=place.top-place.bottom;
 
 document.addEventListener("DOMContentLoaded",budgeSize);
 
-window.onresize=budgeSize;
+window.onresize=()=>{
+  budgeSize();
+  iw=window.innerWidth;
+  ih=window.innerHeight;
+  place=picture.getBoundingClientRect();
+  bs=(place.top-place.bottom)/9;
+}
 
 function budgeSize(){
-   nof.style.top=(place.top+window.scrollY)-100+"px";
+   nof.style.top=(place.top+window.scrollY)-bs/2+"px";
+   nof.style.right=place.right-bs/2;
 }
 
 
