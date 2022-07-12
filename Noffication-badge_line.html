@@ -64,6 +64,15 @@ picture img{
    border-radius: 100vw;
 
    position:absolute;
+
+   display:flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#nofin{
+   
+   text-align:center;
 }
 
     </style>
@@ -77,11 +86,12 @@ picture img{
       <img src="./Noffication-badge_line/LINEicon.png" type="image/png" alt="Line icon">
    </picture>
 
-   <div id="nof"></div>
+   <div id="nof"><span id="nofin"></span></div>
 
     <script>
 let count=0;
 const nof=document.getElementById("nof");
+const nofin=document.getElementById("nofin");
 const picture=document.getElementsByTagName("picture")[0];
 let place=picture.getBoundingClientRect();
 let iw=window.innerWidth;
@@ -115,7 +125,7 @@ document.body.onkeydown=e=>{
 
 function countup(){
    
-   nof.textContent=++count;
+   nofin.textContent=++count;
 }
 
     </script>
