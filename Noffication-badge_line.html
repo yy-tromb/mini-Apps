@@ -56,10 +56,10 @@ picture img{
 
    padding:auto;
 
-   width:10vw;
-   max-width: 10vh;
-   height: 10vw;
-   max-height: 10vh;
+   width:15vw;
+   max-width: 15vh;
+   height: 15vw;
+   max-height: 15vh;
 
    border-radius: 100vw;
 
@@ -105,12 +105,12 @@ window.onresize=()=>{
   iw=window.innerWidth;
   ih=window.innerHeight;
   place=picture.getBoundingClientRect();
-  bs=(place.top-place.bottom)/9;
+  bs=(place.top-place.bottom)/6;
 }
 
 function budgeSize(){
    nof.style.top=(place.top+window.scrollY)-bs/2+"px";
-   nof.style.right=place.right-bs/2;
+   nof.style.right=place.right-bs/2+"px";
 }
 
 
