@@ -94,7 +94,7 @@ const picture=document.getElementsByTagName("picture")[0];
 let place=picture.getBoundingClientRect();
 let iw=window.innerWidth;
 let ih=window.innerHeight;
-let bs=place.top-place.bottom;
+let bs=(place.bottom-place.top)/4.5;
 
 document.addEventListener("DOMContentLoaded",budgeSize);
 
@@ -103,7 +103,7 @@ window.onresize=()=>{
   iw=window.innerWidth;
   ih=window.innerHeight;
   place=picture.getBoundingClientRect();
-  bs=(place.top-place.bottom)/4.5;
+  bs=(place.bottom-place.top)/4.5;
 }
 
 function budgeSize(){
