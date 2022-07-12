@@ -70,13 +70,14 @@ picture img{
     <script>
 let count=0;
 const nof=document.getElementById("nof");
+const picture=document.getElementsByTagName("picture")[0];
+const place=picture.getBoundingClientRect();
 
 document.addEventListener("DOMContentLoaded",budgeSize);
 
+window.onresize=budgeSize;
 
 function budgeSize(){
-   const picture=document.getElementsByTagName("picture")[0];
-   const place=picture.getBoundingClientRect();
    nof.style.top=(place.top+window.scrollY)-100+"px";
 }
 
