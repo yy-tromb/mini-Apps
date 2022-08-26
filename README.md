@@ -6,3 +6,4 @@
   
 ## copyDNA  
  Game to copy DNA.A->T,T->A,C->G,G->C  
+ ※preparing this.Wait for complete.  
