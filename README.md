@@ -9,7 +9,7 @@
  ※preparing this.Wait for complete.  
   
   
-## License  
+## License - Apache License 2.0  
   
 これを使おうなんていう物好きはいないと思いますが、つけてみましたので、従ってくださいww。あと、強制はしないが、特にソースを隠す必要なくないか？と思うので、公開してほしいですね。GitHubなんてものもありますし。  
   
